@@ -6,6 +6,7 @@ client = commands.Bot(command_prefix='#')
 
 @client.event
 async def on_ready():
+    await client.change_presence(game=discord.Game(name='GrieferLeben'))
     print('Der Bot is on')
 
 @client.event
