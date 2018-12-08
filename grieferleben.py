@@ -22,12 +22,4 @@ async def clear(ctx, number):
             await client.delete_message(x)
             counter += 1
 
-@client.command()
-async def echo(*args):
-    output = ''
-    for word in args:
-        output += word
-        output += ' '
-    await client.say(output)
-
 client.run(os.getenv('TOKEN'))
