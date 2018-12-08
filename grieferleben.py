@@ -229,4 +229,5 @@ async def banlist(ctx):
 	await client.say("Ban List: {}".format(bans))
 	
 client.loop.create_task(change_status())
-client.run(str(os.environ.get('TOKEN')))
+
+client.run(os.getenv('TOKEN'))
