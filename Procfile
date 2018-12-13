@@ -1,1 +1,1 @@
-worker: python grieferleben.py
+worker: python GolemGames.py
